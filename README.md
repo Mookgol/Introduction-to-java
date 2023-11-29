@@ -1908,3 +1908,385 @@ Non-access modifiers can also be applied to attributes (variables) and methods w
   
 
 These modifiers provide additional control and functionality to classes, methods, and variables in Java, allowing developers to manage accessibility, inheritance, constants, and thread safety. 
+
+
+
+
+#Week 2 Java
+##Git Version Control
+
+•	A version control system is software that tracks changes to a file or set of files over time so that you can recall specific versions later.  
+•	It also allows you to work together with other programmers or developers.
+•	The version control system is a collection of software tools that help a team to manage changes in a source code. 
+•	It uses a special kind of database to keep track of every modification to the code.  
+What is Git
+•	Git is an open-source distributed version control system. 
+•	It is designed to handle minor to major projects with high speed and efficiency. 
+•	It is developed to co-ordinate the work among the developers.
+•	 The version control allows us to track and work together with our team members at the same workspace.
+•	Git is the foundation of many services like GitHub and GitLab, but we can use Git without using any other Git services. 
+•	Git can be used privately and publicly.
+•	Git was created by Linus Torvalds in 2005 to develop Linux Kernel. 
+•	Git is easy to learn and has fast performance. 
+•	It is superior to other SCM tools like Subversion, CVS, Perforce, and ClearCase.
+Git, as a version control system, has gained immense popularity due to several key features that make it robust and efficient.
+Here are nine prominent features of Git:
+ 
+1.Distributed Development: Git is a distributed version control system, meaning every user has a full copy of the repository. This allows users to work independently and efficiently, even without a constant network connection. Each user can perform commits, branch, and merge changes without relying on a central server.
+ 
+2. Branching and Merging: Git's branching model is lightweight and powerful. Creating branches is fast and easy, enabling developers to work on multiple features or fixes simultaneously. Merging branches in Git is generally straightforward and allows for various strategies like rebasing and merging algorithms.
+ 
+3. Speed and Performance: Git is designed for speed and performance. Operations like committing changes, branching, merging, and switching branches are typically fast, even with large repositories. Its performance remains efficient, regardless of the size of the project history.
+ 
+4. Data Integrity: Git ensures the integrity of data by using a cryptographic hash function (SHA-1) to assign a unique identifier (hash) to each commit, file, and directory. This check summing mechanism helps in detecting any corruption or changes in the repository's data.
+ 
+5. Staging Area (Index): Git's staging area, also known as the index, allows developers to selectively stage changes before committing them. This feature offers greater control over what changes are included in a commit, enabling more granular and organized commits.
+ 
+6. Support for Non-linear Development: Git supports non-linear development workflows due to its efficient branching and merging capabilities. Developers can experiment with various ideas, create feature branches, and merge changes back into the main branch seamlessly.
+ 
+7. Open Source and Community Support: Being open source, Git has a vibrant community contributing to its development. This active community ensures ongoing improvements, frequent updates, and a wealth of resources, including documentation, tutorials, and plugins.
+ 
+8. Ease of Collaboration: Git facilitates collaboration among developers by providing mechanisms for pushing and pulling changes from remote repositories. Platforms like GitHub, GitLab, and Bitbucket leverage Git, enabling easy collaboration through pull requests, code reviews, and issue tracking.
+ 
+9. Flexible Workflows: Git supports various workflows, including centralized, feature branch, Gitflow, and others. This flexibility allows teams to adopt workflows that best suit their development processes, making it adaptable to diverse project needs.
+ 
+These features collectively contribute to making Git a popular and robust version control system, widely used across different industries and development scenarios.
+
+
+
+
+Benefits of using Git
+
+•	A version control application allows us to keep track of all the changes that we make in the files of our project(s).
+•	Using Git in Java (or any programming language) offers several benefits for version control, collaboration, and project management.
+Major benefits of Git are:
+
+Saves Time
+
+Git is lightning fast technology. Each command takes only a few seconds to execute so we can save a lot of time as compared to login to a GitHub account and find out its features.
+
+Offline Working
+
+One of the most important benefits of Git is that it supports offline working. If we are facing internet connectivity issues, it will not affect our work. In Git, we can do almost everything locally. Comparatively, other CVS like SVN is limited and prefer the connection with the central repository.
+
+Undo Mistakes
+
+One additional benefit of Git is we can Undo mistakes. Sometimes the undo can be a savior option for us. Git provides the undo option for almost everything.
+
+Track the Changes
+
+Git facilitates with some exciting features such as Diff, Log, and Status, which allows us to track changes so we can check the status, compare our files or branches.
+ Here are some advantages of using Git specifically in Java development:
+
+1.	Version Control: Git allows you to track changes to your Java codebase over time. You can commit changes, create branches, and revert to previous versions if needed. This helps in maintaining a history of code changes and enables easy collaboration among developers.
+2.	 Branching and Merging: Git provides robust branching and merging capabilities. In Java development, this is particularly useful when working on different features or bug fixes simultaneously without affecting the main codebase. Merging these changes back into the main branch becomes a smooth process.
+3.	 Collaboration and Teamwork: Git facilitates collaboration among team members. Multiple developers can work on the same Java project simultaneously by using branches and then merge their changes together. It also allows for code reviews, making it easier to maintain code quality.
+4.	 Backup and Recovery: With Git, your code is stored in a repository, which acts as a backup. If something goes wrong or if code is accidentally deleted or changed, you can recover previous versions from the repository.
+5.	 Distributed Development: Git is a distributed version control system, which means each developer has a full copy of the repository. This allows developers to work offline, commit changes locally, and later sync with the central repository.
+6.	 Integration with Development Tools: Git integrates well with various development tools and IDEs used in Java development, such as Eclipse, IntelliJ IDEA, and NetBeans. These integrations provide seamless workflows for version control operations.
+7.	 Open Source and Community Support: Git is open source and has a large community of users and contributors. This means there is extensive documentation, tutorials, and community support available, which can be beneficial for Java developers.
+8.	Facilitates Continuous Integration/Continuous Deployment (CI/CD): Git can be integrated with CI/CD pipelines, allowing for automated testing, building, and deployment processes. This is crucial in modern software development practices.
+
+Git is a powerful version control system that offers numerous advantages for Java developers, enabling efficient collaboration, version management, and project organization. Its features contribute to smoother development workflows and better project maintenance.
+
+
+
+
+
+
+##Day 2
+###Git Tools
+
+•	In Java, there are various Git-related tools and libraries available that facilitate working with Git repositories, performing version control operations, and integrating Git functionalities into Java applications.
+ Some of these tools include:
+
+1. JGit: Developed by the Eclipse Foundation, JGit is a pure Java implementation of Git. It provides an API to interact with Git repositories programmatically within Java applications. JGit enables developers to perform various Git operations programmatically without relying on the Git command-line interface.
+
+2. EGit: EGit is an Eclipse plugin that integrates Git functionality into the Eclipse IDE. It allows developers to manage Git repositories, perform commits, merges, branch operations, and more directly from within Eclipse.
+
+3. GitBlit: GitBlit is a pure Java Git server for managing, viewing, and serving Git repositories. It provides a web-based interface for repository management and can be embedded into Java applications for custom Git repository hosting.
+
+4. Git Java API by Atlassian (Bitbucket): Atlassian provides a Java API for interacting with Git repositories. This API allows developers to work with Git repositories programmatically using Java code, perform operations like cloning, pushing, pulling, etc., and integrate Git functionalities into their Java applications.
+
+5. Apache Maven SCM Plugin: Apache Maven SCM Plugin supports various version control systems, including Git. It allows Maven users to interact with Git repositories through Maven commands, making it easier to manage and build projects.
+
+6. Spring VCS (Version Control System) Support: The Spring Framework provides support for version control systems, including Git, through its VCS module. This module offers abstractions and APIs to work with different version control systems within Spring-based applications.
+
+These tools and libraries enable Java developers to interact with Git repositories, perform version control operations, integrate Git functionalities into Java applications, and manage projects effectively within the Java ecosystem. Depending on the specific requirements of your project, you can choose the tool or library that best fits your needs and integrates well with your development workflow.
+
+Git Terminology 
+
+•	Git is a version control system that tracks changes in code during software development. 
+•	It has its own set of terminologies that are commonly used when working with Git. 
+Here are some Git terminologies explained with Java examples:
+
+1. Repository: A repository is a collection of files, folders, and version history for a project. In Git, it can be local (on your machine) or remote (on a server). 
+
+2. Clone: To create a copy of a repository that exists remotely onto your local machine. For instance, cloning a Java project repository from GitHub:
+
+   git clone <repository_URL>
+ 
+
+3. Commit: A commit is a snapshot of changes made to the files in the repository. It represents a specific point in the project's history. 
+
+   git commit -m "Commit message"
+   
+
+4. Branch: A branch is an independent line of development in Git. It allows you to work on new features or fixes without affecting the main codebase. For example, creating and switching to a new branch in Git:
+
+   git branch new-feature
+   git checkout new-feature
+
+5. Merge: Merging integrates changes from one branch into another. For instance, merging changes from a feature branch into the main branch:
+
+   git checkout main
+   git merge new-feature
+   
+
+6. Pull: Pulling is used to fetch changes from a remote repository and merge them into the current branch. For example, pulling changes from the remote repository into your local branch:
+   git pull origin main
+   
+
+7. Push: Pushing refers to sending committed changes from your local repository to a remote repository. For instance, pushing changes from your local branch to a remote repository:
+
+   git push origin new-feature
+   
+
+8. Remote: A remote is a reference to a repository stored on another server. Common remote repositories include GitHub, GitLab, and Bitbucket.
+
+   git remote add origin <repository_URL>
+
+9. Pull Request (PR): A pull request is a request to merge changes from one branch into another. It's commonly used for collaboration, especially in open-source projects hosted on platforms like GitHub.
+
+•	Once you've made changes in a branch, you can create a pull request to propose these changes for review and merging into the main branch.
+
+•	These are some of the fundamental Git terminologies often used in the context of Java or any other programming language when working with version control using Git.
+
+##Day 3
+Basic Git Command
+
+•	Git is a powerful version control system used for tracking changes in code during software development.
+ Here are some basic Git commands frequently used in day-to-day development:
+
+1. git init: Initializes a new Git repository in the current directory.
+
+    git init
+
+2. git clone: Copies a repository from a remote server to your local machine.
+
+    git clone <repository_URL>
+
+3. git add: Adds changes in the working directory to the staging area (prepares them for the next commit).
+
+    
+    git add <file_name>                # Add a specific file
+    git add .                          # Add all changes in the current directory
+
+4. git commit: Records the changes made to the files in the repository.
+
+    git commit -m "Commit message"
+ 
+
+5. git status: Shows the current state of the working directory and staging area.
+
+    git status
+  
+
+6. git pull: Fetches changes from a remote repository and merges them into the current branch.
+
+    git pull origin <branch_name>
+   
+
+7. git push: Pushes committed changes from the local repository to a remote repository.
+
+    git push origin <branch_name>
+  
+
+8. git branch: Lists existing branches or creates a new branch.
+
+    
+    git branch                          # List all branches
+    git branch <branch_name>            # Create a new branch
+
+9. git checkout: Switches branches or restores files from a previous commit.
+
+    git checkout <branch_name>          # Switch to a different branch
+    git checkout -- <file_name>        # Restore file to its state at the last commit
+
+10. git merge: Combines changes from one branch into another.
+
+    
+    git merge <branch_name>             # Merge changes from a different branch into the current branch
+   
+
+11. git remote: Manages connections to remote repositories.
+
+    git remote -v                       # List remote repositories
+    git remote add <name> <URL>        # Add a remote repository
+    
+
+•	These are some of the fundamental Git commands that are used regularly for version control and collaboration in software development projects.
+
+
+
+
+Staging and Commit
+In Git, staging and committing are essential steps in the version control process. They allow you to manage changes before permanently recording them in the repository's history. Here's a breakdown of staging and committing changes:
+
+### Staging Changes:
+
+Staging refers to preparing changes made to files in your working directory to be included in the next commit. It allows you to select specific changes to be committed while leaving others out. The staging area, also known as the "index," is where Git gathers and organizes changes before committing them.
+
+#### Adding Changes to the Staging Area:
+
+To add changes to the staging area, you use the `git add` command:
+
+git add <file_name>                   # Stage a specific file
+git add .                             # Stage all changes in the current directory
+```
+
+#### Viewing Staged and Unstaged Changes:
+
+To see the status of changes (what's staged, unstaged, or untracked), you can use `git status`:
+git status                            # View the status of the working directory
+
+### Committing Changes:
+
+Committing refers to permanently storing the changes that have been staged. A commit creates a snapshot of the current state of the files in the staging area and records it in the Git history.
+
+#### Committing Staged Changes:
+
+To commit staged changes along with a commit message:
+
+git commit -m "Commit message describing changes"
+
+
+#### Amending the Last Commit:
+
+If you want to add more changes or modify the last commit message:
+
+git commit --amend                    # Add staged changes to the previous commit
+```
+
+### Summary:
+
+- Staging Changes**: Use `git add` to select changes to be included in the next commit.
+- Committing Changes**: Use `git commit` to save staged changes to the repository's history along with a descriptive commit message.
+
+These actions help maintain a clear and organized history of changes in your Git repository, making it easier to track progress, collaborate with others, and revert to previous states when needed.
+
+
+
+
+Inspect and Undo changes
+
+•	In Git, inspecting and undoing changes involve various commands and techniques that allow you to review modifications made to files and revert them if necessary.
+
+### Inspecting Changes:
+
+1. Viewing Changes: To see the differences between the working directory and the staging area, you can use `git diff`:
+
+    git diff                            # Show unstaged changes
+    git diff --staged                   # Show staged changes
+
+2. Viewing Commit History: To see the history of commits and changes made in the repository:
+
+    git log                             # Show commit history
+    git log --oneline                   # Show commit history in a concise format
+
+### Undoing Changes:
+
+1. Unstage Changes: If you've added changes to the staging area and want to remove them:
+
+    git reset HEAD <file_name>          # Unstage a specific file
+    git reset HEAD .                    # Unstage all changes
+
+2. Discard Unstaged Changes: If you want to revert unstaged changes in your working directory:
+
+    git checkout -- <file_name>         # Discard changes in a specific file
+    git checkout -- .                   # Discard changes in all files
+
+3. Revert Changes in a Commit: To undo changes introduced by a specific commit and create a new commit to reverse those changes:
+
+    git revert <commit_hash>            # Revert changes introduced by a commit
+
+4. **Resetting to a Previous Commit**: To move the HEAD pointer and reset the repository to a specific commit (use with caution as it rewrites history):
+
+    git reset --hard <commit_hash>      # Reset to a specific commit and discard all changes after it
+
+•	while using commands like `reset --hard` can revert changes, they also discard all subsequent commits. Hence, it's crucial to use them carefully, especially in shared repositories, as they can affect other collaborators.
+
+•	Always ensure you have a backup or are aware of the consequences before using commands that rewrite history or remove commits from a shared branch.
+
+Collaborating
+Collaborating with Git involves working on a project alongside others, allowing multiple developers to contribute, share code, review changes, and maintain a coherent codebase. Here are key practices and commands for collaborating using Git:
+
+### Setting Up Collaboration:
+
+1. **Forking a Repository: Forking creates a personal copy of someone else's project/repository on your GitHub/GitLab/Bitbucket account.
+
+2. Cloning a Repository: Clone the forked repository to your local machine:
+
+   git clone <repository_URL>
+   ```
+
+3. Adding a Remote: Connect your local repository to the original repository to stay updated with changes made in the original:
+
+   git remote add upstream <original_repository_URL>
+   ```
+
+### Branching and Working on Features:
+
+1. Creating a Branch: Work on a new feature or bug fix in a dedicated branch:
+
+   git checkout -b new-feature
+   ```
+
+2. **Making Changes**:
+   - Make changes to files in your branch.
+   - Stage and commit your changes:
+
+   git add <file_name>
+   git commit -m "Descriptive commit message"
+   ```
+
+3. Pushing Changes:
+   - Push your changes to your forked repository:
+
+   git push origin new-feature
+   ```
+
+### Collaborating and Syncing Changes:
+
+1. Pull Request (PR): Create a pull request from your branch to the original repository:
+   - Go to your forked repository on the web interface and create a PR.
+
+2. Reviewing Pull Requests:
+   - Collaborators review the code changes in the PR and provide feedback.
+   - Discuss and make necessary adjustments to the code.
+
+3. Merge Changes:
+   - Once the PR is approved, merge it into the main branch.
+
+### Keeping Up-to-Date:
+
+1. Fetch and Pull Changes from Upstream:
+   - Fetch changes from the original repository:
+
+   git fetch upstream
+   ```
+
+   - Merge the changes into your local branch:
+   git checkout main
+   git merge upstream/main
+   ```
+
+2. Push Changes:
+   - Push the updated main branch to your forked repository:
+
+   git push origin main
+   ```
+
+•	These collaborative workflows help multiple developers work on a project concurrently, manage changes, review code, and maintain a clean and stable codebase using Git's version control capabilities. 
+•	Communication, code reviews, and proper coordination are crucial for successful collaboration in software development projects.
+
